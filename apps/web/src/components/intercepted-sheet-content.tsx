@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client'
 
 import * as SheetPrimitive from '@radix-ui/react-dialog'
@@ -16,7 +17,7 @@ interface InterceptedSheetContentProps
 
 export const InterceptedSheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
-  InterceptedSheetContentProps,
+  InterceptedSheetContentProps
 >(({ side = 'right', className, children, ...props }, ref) => {
   const router = useRouter()
 
